@@ -1,16 +1,88 @@
-venv/
+# =========================
+# Python
+# =========================
+
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+
+# =========================
+# Virtual Environment
+# =========================
+
+venv/
+env/
+ENV/
+
+# =========================
+# IDE
+# =========================
+
+.vscode/
+.idea/
+
+# =========================
+# OS Files
+# =========================
+
+.DS_Store
+Thumbs.db
+
+# =========================
+# Dataset Files
+# =========================
+
+data/raw/*
+data/processed/*
+
+# Keep folder structure
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# =========================
+# Trained Models
+# =========================
 
 models/*.pth
+models/*.pt
+models/*.pkl
 
-data/raw/
-data/processed/graph_data.pt
+# Keep folder
+!models/.gitkeep
+
+# =========================
+# Generated Outputs
+# =========================
+
 outputs/*.png
+outputs/*.jpg
+outputs/*.jpeg
 outputs/*.csv
 outputs/*.txt
 
-.idea/
-.vscode/
+# Keep folder
+!outputs/.gitkeep
 
-.DS_Store
+# =========================
+# Jupyter
+# =========================
+
+.ipynb_checkpoints/
+
+# =========================
+# Logs
+# =========================
+
+*.log
+
+# =========================
+# PyTorch Geometric
+# =========================
+
+graph_data.pt
+
+# =========================
+# Streamlit Cache
+# =========================
+
+.streamlit/secrets.toml
